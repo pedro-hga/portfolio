@@ -1,2 +1,12 @@
 @import "~bootstrap/scss/bootstrap.scss";
-@import "_stylesheets/styles.scss";
+
+@import "stylesheets/config/fonts";
+@import "stylesheets/config/colors";
+@import "stylesheets/config/bootstrap_variables";
+
+@import "stylesheets/components/navbar";
+@import "stylesheets/styles.scss";
+
+
+// font-awesome
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
