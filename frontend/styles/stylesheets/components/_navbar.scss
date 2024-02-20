@@ -1,8 +1,10 @@
 .navbar {
+  height: 80px;
   margin: 8px 0;
-  border-bottom: 1px grey solid;
+  border-bottom: 1px $light-fade solid;
   padding: 0;
 }
+
 
 .terminal {
   font-size: 18px;
@@ -27,4 +29,22 @@
 
 .nav-link {
   font-size: 36px;
+}
+
+.blinking-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
