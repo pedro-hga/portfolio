@@ -1,7 +1,34 @@
 // color palette
 $bg0: #252535;
 $light: #DCD7BA;
+$light-fade: hsl(51, 33%, 80%, 0.3);
 $blue: #7FB4CA;
 $orange: #FE9F66;
 $green0: #76946A;
 $green1: #98BB6C;
+$purple: #957FB8;
+$red: #E46876;
+
+.red {
+  color: $red;
+}
+
+.purple {
+  color: $purple;
+}
+
+.orange {
+  color: $orange;
+}
+
+.light-fade {
+  color: $light-fade;
+}
+
+.green {
+  color: $green1;
+}
+
+.blue {
+  color: $blue;
+}

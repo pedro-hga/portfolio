@@ -1,4 +1,11 @@
 body {
   background-color: $bg0;
+  color: $blue;
   font-family: $body-font;
+}
+
+main {
+  height: calc(100vh - 96px);
+  padding-top: 16px;
+  padding-bottom: 16px;
 }

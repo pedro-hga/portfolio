@@ -1,11 +1,15 @@
+// bootstrap
 @import "~bootstrap/scss/bootstrap.scss";
 
+// config
 @import "stylesheets/config/fonts";
 @import "stylesheets/config/colors";
 @import "stylesheets/config/bootstrap_variables";
 
+// pages and components
+@import "stylesheets/styles";
 @import "stylesheets/components/navbar";
-@import "stylesheets/styles.scss";
+@import "stylesheets/pages/home_page";
 
 
 // font-awesome
