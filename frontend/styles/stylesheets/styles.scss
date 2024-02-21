@@ -9,3 +9,19 @@ main {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
+.line-break {
+  border-bottom: 1px dashed $light-fade;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.readme {
+  max-width: 65ch;
+  margin: 0 auto;
+  font-family: $post-font;
+}
+
+.mono {
+  font-family: $body-font;
+}

@@ -9,6 +9,17 @@ $green1: #98BB6C;
 $purple: #957FB8;
 $red: #E46876;
 $grey: #7483A1;
+$light-grey: #B6BECD;
+$white: #d8dee9;
+
+
+.light-grey {
+  color: $light-grey;
+}
+
+.white {
+  color: $white;
+}
 
 .red {
   color: $red;
@@ -20,6 +31,10 @@ $grey: #7483A1;
 
 .orange {
   color: $orange;
+}
+
+.light {
+  color: $light;
 }
 
 .light-fade {
