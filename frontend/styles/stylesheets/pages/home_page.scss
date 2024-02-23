@@ -9,3 +9,19 @@
 .pane-right {
   padding-left: 32px;
 }
+
+@media screen and (max-width: 992px) {
+  .panes {
+    display: grid;
+  }
+
+  .pane-left,
+  .pane-right {
+    width: 100%;
+  }
+
+  .pane-left {
+    margin-bottom: 40px;
+    border-right: none;
+  }
+}

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="panes row h-100">
+<div id="panes" class="panes row h-100">
   <div class="pane-left col-7 d-flex flex-column h-75">
     <span class="pane-command ">
       <h1><span class="red">> </span><span class="purple">whoami</span></h1>
@@ -38,8 +38,3 @@ layout: default
     </div>
   </div>
 </div>
-<%
-  content = File.read(File.join("src", "about.md"))
-  no_front_matter = content.sub(/\A(---\s*\n.*?\n?)^---\s*\n/m, '')
-%>
-<%= markdownify(no_front_matter) %>

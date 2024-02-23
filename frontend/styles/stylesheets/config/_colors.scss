@@ -12,6 +12,10 @@ $grey: #7483A1;
 $light-grey: #B6BECD;
 $white: #d8dee9;
 
+// foreground
+.bg0 {
+  color: $bg0;
+}
 
 .light-grey {
   color: $light-grey;
@@ -47,4 +51,42 @@ $white: #d8dee9;
 
 .blue {
   color: $blue;
+}
+
+
+//background
+.bg-light-grey {
+  background-color: $light-grey;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-light {
+  background-color: $light;
+}
+
+.bg-light-fade {
+  background-color: $light-fade;
+}
+
+.bg-green {
+  background-color: $green1;
+}
+
+.bg-blue {
+  background-color: $blue;
 }

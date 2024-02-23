@@ -35,5 +35,6 @@ template_engine: erb
 
 collections:
   projects:
+    relative_directory: _projects
     output: true
     permalink: pretty

@@ -1,3 +1,17 @@
 ---
 layout: default
 ---
+<div id="panes" class="panes row h-100">
+  <div class="pane-left col-7 d-flex flex-column h-100">
+    <% collections.projects.resources.each do |project| %>
+      <div class="card-project mb-3">
+        <img class="card-project-image" src=<%= project.data.image %> />
+        <div class="card-project-title">
+          <a href="<%= project.relative_url %>"><%= project.data.title %></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="pane-right col-5 d-flex flex-column h-100">
+  </div>
+</div>
