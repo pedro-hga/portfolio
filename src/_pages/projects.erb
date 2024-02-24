@@ -4,10 +4,10 @@ layout: default
 <div id="panes" class="panes row h-100">
   <div class="pane-left col-7 d-flex flex-column h-100">
     <% collections.projects.resources.each do |project| %>
-      <div class="card-project mb-3">
+      <div class="card-project mb-5 my-auto">
         <img class="card-project-image" src=<%= project.data.image %> />
-        <div class="card-project-title">
-          <a href="<%= project.relative_url %>"><%= project.data.title %></a>
+        <div class="card-project-title  d-flex align-items-end">
+          <a href="<%= project.relative_url %>" class="text-decoration-none blue"><h1><%= project.data.title %></h1></a>
         </div>
       </div>
     <% end %>
