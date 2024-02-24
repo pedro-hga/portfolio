@@ -18,11 +18,12 @@ export default class extends Controller {
     const customText = {
       "https://github.com/pedro-hga": "gh project list --owner pedro",
       "https://www.linkedin.com/in/pedrohga":
-        "ln -s https://www.linkedin.com/in/pedrohga",
+        "ln -s https://www.linkedin.com/in/pedrohga ./linkedin.html",
       "/": "cd ~/home",
       "/about": "nvim README.md",
       "/projects": "cd ~/home/pedro/projects",
       "/contact_me": "node contact_me.js",
+      "/writings": "cd ~/home/pedro/writings",
     };
     return customText[href] || "";
   }
