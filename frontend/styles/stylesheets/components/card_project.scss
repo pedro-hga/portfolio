@@ -1,17 +1,65 @@
 .card-project {
+  outline: 1px solid $grey;
+  border-radius: 8px;
   height: 198px;
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: row;
 }
 
+.card-project:hover {
+  outline: 1px solid $orange;
+}
+
+.card-project:hover .response {
+  display: block;
+}
+
+
+.card-project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .card-project-image {
-  outline: 4px solid $purple;
-  border-radius: 8px;
+  border-radius: 8px 0 0 8px;
+  outline: 1px solid $grey;
   width: 198px;
   height: 198px;
-  padding: 16px 16px;
   object-fit: cover;
   margin-right: 24px;
 }
 
+.card-project-about {
+  margin-right: 16px;
+}
+
+.card-project-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+// mobile
+@media screen and (max-width: 992px) {
+  .card-project {
+    outline: 1px solid $grey;
+    width: 100%;
+  }
+
+  .card-project-description {
+    display: none;
+  }
+
+  .card-project-links {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    justify-content: space-between;
+  }
+
+}

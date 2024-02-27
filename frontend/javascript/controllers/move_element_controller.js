@@ -7,7 +7,6 @@ export default class extends Controller {
     const href = event.currentTarget.closest("a").getAttribute("href");
     const customText = this.getCustomText(href);
     this.targetTarget.textContent = customText;
-    console.log(href);
   }
 
   resetHref() {
@@ -22,6 +21,8 @@ export default class extends Controller {
       "/": "cd ~/home",
       "/about": "nvim README.md",
       "/projects": "cd ~/home/pedro/projects",
+      "/projects/go_local/": "cd ~/home/pedro/projects/go_local",
+      "/projects/guide_me/": "cd ~/home/pedro/projects/guide_me",
       "/contact_me": "node contact_me.js",
       "/writings": "cd ~/home/pedro/writings",
     };

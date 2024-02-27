@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="panes" class="panes row h-100">
-  <div class="pane-left col-7 d-flex flex-column h-75">
+  <div class="pane-left col-7 d-flex flex-column h-100">
     <span class="pane-command ">
       <h1><span class="red"><b>❯</b> </span><span class="purple">whoami</span></h1>
       <h5 class="light-fade"><em># returns the user</em></h4>
@@ -15,7 +15,7 @@ layout: default
       </h2>
     </div>
   </div>
-  <div class="pane-right col-5 d-flex flex-column h-75">
+  <div class="pane-right col-5 d-flex flex-column h-100">
     <div class="pane-command">
       <h1><span class="red"><b>❯</b> </span><span class="purple">ls</span></h1>
       <h5 class="light-fade "><em># returns a list of all contents on home folder</em></h3>
@@ -31,9 +31,9 @@ layout: default
         <li><a href="<%= relative_url '/contact_me' %>" class="text-decoration-none blue" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
             <h1>contact_me.js</h1>
           </a></li>
-          <li><a href="<%= relative_url '/about' %>" class="text-decoration-none blue" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-              <h1>README.md</h1>
-            </a></li>
+        <li><a href="<%= relative_url '/about' %>" class="text-decoration-none blue" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+            <h1>README.md</h1>
+          </a></li>
       </ul>
     </div>
   </div>

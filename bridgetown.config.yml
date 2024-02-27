@@ -37,4 +37,4 @@ collections:
   projects:
     relative_directory: _projects
     output: true
-    permalink: pretty
+    permalink: simple

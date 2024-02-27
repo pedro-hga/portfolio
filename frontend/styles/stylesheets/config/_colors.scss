@@ -11,6 +11,8 @@ $red: #E46876;
 $grey: #7483A1;
 $light-grey: #B6BECD;
 $white: #d8dee9;
+$yellow: #FFD53B;
+$pink: #D27E99;
 
 // foreground
 .bg0 {
@@ -51,6 +53,14 @@ $white: #d8dee9;
 
 .blue {
   color: $blue;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.pink {
+  color: $pink;
 }
 
 
