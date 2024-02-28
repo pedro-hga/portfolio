@@ -48,3 +48,18 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 992px) {
+
+  .nav-link {
+    font-size: 24px;
+  }
+
+  .terminal-command {
+    display: none
+  }
+
+  .terminal {
+    font-size: 16px;
+  }
+}

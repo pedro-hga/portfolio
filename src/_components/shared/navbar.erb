@@ -1,9 +1,11 @@
 <nav id="navbar" class="navbar container m-auto px-3">
   <div class="terminal row">
-    <span class="terminal-path"><a href="<%= relative_url '/'%>" class="text-decoration-none blue"
-        data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-        ~/home<span></span>
-      </a></span>
+    <div class="terminal-path">
+      <a href="<%= relative_url '/'%>" class="text-decoration-none blue"
+          data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+        <span>~/home/pedro</span><span class="blue" data-find-directory-target="link">
+        </a></span>
+    </div>
     <div class="terminal-command">
       <b>❯</b>
       <span class="target-element" data-move-element-target="target"></span>

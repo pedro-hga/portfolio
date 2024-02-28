@@ -1,43 +1,15 @@
 ---
 layout: default
 ---
-<div id="panes" class="panes row h-100" data-controller="display">
+<div id="panes" class="panes row h-100" data-controller="display file-name">
   <div class="pane-left col-7 d-flex flex-column h-75">
     <h1><span class="red"><b>❯</b> </span><span class="purple">ls -a</span></h1>
     <h5 class="light-fade mb-5"><em># returns a list of all contents on home folder</em></h3>
-    <% collections.projects.resources.each do |project| %>
-      <div class="card-project mb-5 my-auto" >
-        <img class="card-project-image" src=<%= project.data.image %> />
-        <div class="card-project-info my-3">
-          <div class="card-project-title" data-controller="project-file">
-            <a href="<%= project.relative_url %>"
-              class="card-project-about text-decoration-none orange"
-              data-action="mouseenter->move-element#getHref
-              mouseenter->display#changeDisplay
-              mouseout->display#changeDisplay
-              mouseout->move-element#resetHref"
-              data-project-file="<%= project.data.file_name %>">
-              <h2 class="orange"><%= project.data.title %></h2>
-            </a>
-          </div>
-          <div class="card-project-description">
-            <p><%= project.data.description %></p>
-          </div>
-          <div class="card-project-links">
-            <a href="<%= project.relative_url %>" class="card-project-about text-decoration-none blue" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-              About the project
-            </a>
-            <a href="<%= project.data.github_link %>" class="card-project-about text-decoration-none light" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-              <i class="fab fa-github"></i> Source code
-            </a>
-          </div>
-        </div>
-      </div>
-    <% end %>
+    <%= render '/card_project' %>
   </div>
   <div class="pane-right col-5 d-flex flex-column h-100">
-    <div class="response d-none" data-display-target="response">
-      <%= render 'projects_description/dsc_go_local' %>
+    <div class="response d-none" data-display-target="response"
+      data-file-name-target="url">
     </div>
   </div>
 </div>
