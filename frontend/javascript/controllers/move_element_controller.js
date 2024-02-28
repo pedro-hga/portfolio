@@ -16,6 +16,7 @@ export default class extends Controller {
   getCustomText(href) {
     const customText = {
       "https://github.com/pedro-hga": "gh project list --owner pedro",
+      "mailto:pedro_hga@proton.me": "./send_mail.sh",
       "https://github.com/pedro-hga/go-local":
         "gh repo view pedro-hga/go-local",
       "https://github.com/pedro-hga/guide-me":

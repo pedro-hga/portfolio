@@ -1,0 +1,39 @@
+code {
+  font-family: $body-font;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  white-space: pre-wrap;
+  border-radius: 5px;
+}
+
+code span {
+  margin-bottom: 8px;
+}
+
+.code-1 {
+  padding-left: 8px;
+}
+
+.code-2 {
+  padding-left: 16px;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.return-pane {
+  font-size: 1.15rem;
+}
+
+.return-pane>span {
+  margin-bottom: 8px;
+}
+
+
+@media screen and (max-width: 992px) {
+  .code-pane {
+    display: none !important;
+  }
+}
