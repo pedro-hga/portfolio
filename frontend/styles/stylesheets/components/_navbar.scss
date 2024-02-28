@@ -23,7 +23,7 @@
   font-weight: 500;
 }
 
-.fab {
+.nav-icon {
   color: $light;
 }
 
@@ -46,5 +46,20 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .nav-link {
+    font-size: 24px;
+  }
+
+  .terminal-command {
+    display: none
+  }
+
+  .terminal {
+    font-size: 16px;
   }
 }

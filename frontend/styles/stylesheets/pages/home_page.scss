@@ -1,5 +1,5 @@
-.pane-left {
-  border-right: 1px $light-fade solid;
+.pane-right {
+  border-left: 1px $light-fade solid;
 }
 
 .pane-return {
@@ -8,4 +8,27 @@
 
 .pane-right {
   padding-left: 32px;
+}
+
+@media screen and (max-width: 992px) {
+  .panes {
+    display: grid;
+  }
+
+  .pane-left,
+  .pane-right {
+    width: 100%;
+  }
+
+  .pane-left {
+    margin-bottom: 40px;
+  }
+
+  .pane-right {
+    border-left: none;
+  }
+
+  .response {
+    display: none;
+  }
 }
