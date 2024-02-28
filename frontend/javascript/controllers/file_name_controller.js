@@ -12,7 +12,7 @@ export default class extends Controller {
     try {
       const response = await fetch(`dsc_${projectFile}`);
       if (!response.ok) {
-        throw new Error("Failed to fetch partial HTML");
+        throw new Error("Fetch failed");
       }
 
       const partialHTML = await response.text();
