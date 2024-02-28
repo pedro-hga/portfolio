@@ -3,8 +3,8 @@ layout: page
 title: From blueprints to code
 ---
 ### Hi, I'm <span class="orange">Pedro!</span>
-#### <span class="purple">Full Stack Web Developer,</span>
-#### <span class="purple">Architect and Urban Planner</span>
+#### <span class="pink">Full Stack Web Developer,</span>
+#### <span class="pink">Architect and Urban Planner</span>
 
 
 <div class="line-break"></div>

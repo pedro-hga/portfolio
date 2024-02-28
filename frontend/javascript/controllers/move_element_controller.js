@@ -24,11 +24,11 @@ export default class extends Controller {
         "ln -s https://www.linkedin.com/in/pedrohga ./linkedin.html",
       "/": "cd ~/home",
       "/about": "nvim README.md",
-      "/projects": "cd ~/home/pedro/projects",
-      "/projects/go_local/": "cd ~/home/pedro/projects/go_local",
-      "/projects/guide_me/": "cd ~/home/pedro/projects/guide_me",
+      "/projects": "cd ~/home/projects",
+      "/projects/go_local/": "cd ~/home/projects/go_local",
+      "/projects/guide_me/": "cd ~/home/projects/guide_me",
       "/contact_me": "node contact_me.js",
-      "/writings": "cd ~/home/pedro/writings",
+      "/writings": "cd ~/home/writings",
     };
     return customText[href] || "";
   }
