@@ -2,6 +2,7 @@
 layout: page
 title: From blueprints to code
 ---
+
 ### Hi, I'm <span class="orange">Pedro!</span>
 #### <span class="pink">Full Stack Web Developer,</span>
 #### <span class="pink">Architect and Urban Planner</span>
@@ -12,8 +13,14 @@ title: From blueprints to code
 <h3 class="orange fw-500">TL;DR</h3>
 
 From Architect and Urban Planner to Full Stack Web Developer, I thrive in collaborative workspaces and am enthusiastic about learning and problem-solving. Always curious about how people interact with things and what could we do to make it better.
-- See my CV - button
-- Simplified CV in notion
+<div class="d-flex ">
+  <div class="btn btn-main">
+    CV in PDF
+  </div>
+  <div class="btn btn-alt">
+    CV in notion
+  </div>
+</div>
 <div class="line-break"></div>
 
 
