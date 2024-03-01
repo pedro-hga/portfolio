@@ -1,0 +1,25 @@
+.project {
+  margin-top: 32px;
+  font-family: $post-font;
+}
+
+.project-image {
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+  object-fit: coer;
+  margin-right: 32px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.programming-icons {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin-right: 24px;
+}
