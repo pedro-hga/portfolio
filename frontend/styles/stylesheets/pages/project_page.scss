@@ -1,6 +1,5 @@
 #panes-project {
   font-family: $post-font;
-  font-size: 18px;
 }
 
 .project {
@@ -24,10 +23,11 @@
 
 .programming-icons {
   width: fit-content;
-  margin-right: 32px;
+  margin-right: 64px;
 }
 
 .programming-icons span.icon {
   font-family: $body-font;
   font-size: 48px;
+  margin-right: 24px;
 }
