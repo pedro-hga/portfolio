@@ -6,20 +6,35 @@ image: images/guide_me.svg
 project_link: https://guide-me-app-c2d673a36c32.herokuapp.com/
 github_link: https://github.com/pedro-hga/guide-me
 description: "A platform connecting aspiring professionals with experienced mentors across various industries."
-programming: [[󰫏, red],[, yellow],[, orange],[, pink],[󰊤, blue],[, purple],[, blue]]
+programming: [[, red],[, yellow],[, orange],[, pink]]
+deploy: [[, red],[󰊤, blue],[, blue],[, purple]]
 ---
 <div id="panes-project" class="panes row h-100" data-controller="display file-name">
   <div class="pane-left col-7 d-flex flex-column h-75">
     <%= render 'project_page' %>
   </div>
   <div class="pane-right col-5 d-flex row h-100">
-    <h1 class="project-info-title d-block orange mt-5 mb-4">Technical sheet</h1>
     <div class="programming-icons">
-      <% page.data.programming.each do |info| %>
-        <p class="icon fs-48 mr-3 <%=info[1] %>">
-          <%= info[0] %>
-        </p>
-      <% end %>
+      <h1 class="project-info-title orange mt-5 mb-4 lh-normal">Technical sheet</h1>
+      <div class="light">
+        <p>Guide Me is a mockup project to create a network of mentors and mentorees, either hoping to share knowledge or finding some sort of direction in their career.</p>
+        <p>This is a project created for the <a href="https://www.lewagon.com/web-development-course" class="text-decoration-none blue">Le Wagon's Web Development</a> course.</p>
+      </div>
+      <p class="mt-5 mb-1 fs-4">Built with:</p>
+      <div>
+        <% page.data.programming.each do |info| %>
+          <span class="icon <%=info[1] %>">
+            <%= info[0] %>
+          </span>
+        <% end %>
+      </div>
+      <div>
+        <% page.data.deploy.each do |info| %>
+          <span class="icon <%=info[1] %>">
+            <%= info[0] %>
+          </span>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

@@ -1,5 +1,7 @@
 ---
 layout: empty
+programming: [[, red],[, yellow],[, orange],[, pink]]
+deploy: [[, red],[󰊤, blue],[, blue],[, purple]]
 ---
 <h1><span class="red"><b>❯</b> </span><span class="purple">cat guide_me.md</span></h1>
 <h5 class="mb-5 light-fade"><em># previews the file</em></h4>
@@ -8,14 +10,17 @@ layout: empty
     <%= collections.projects.resources[1].data.description %>
   </div>
   <div class="line-break"></div>
-  <div class="built">
-    <h4>Built with:</h4>
-    <span class="icon fs-48 red">󰫏 </span>
-    <span class="icon fs-48 yellow"> </span>
-    <span class="icon fs-48 orange"> </span>
-    <span class="icon fs-48 pink"> </span>
-    <span class="icon fs-48 blue">󰊤 </span>
-    <span class="icon fs-48 purple"> </span>
-    <span class="icon fs-48 blue"> </span>
-    <i class="fab fa-figma fs-48 red ml-5"></i>
+  <div>
+    <% page.data.programming.each do |info| %>
+    <span class="icon <%=info[1] %>">
+      <%= info[0] %>
+    </span>
+    <% end %>
+  </div>
+  <div>
+    <% page.data.deploy.each do |info| %>
+    <span class="icon <%=info[1] %>">
+      <%= info[0] %>
+    </span>
+    <% end %>
   </div>

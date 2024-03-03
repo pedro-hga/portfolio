@@ -1,13 +1,18 @@
+#panes-project {
+  font-family: $post-font;
+  font-size: 18px;
+}
+
 .project {
   margin-top: 32px;
-  font-family: $post-font;
 }
+
 
 .project-image {
   border-radius: 8px;
-  width: 300px;
-  height: 300px;
-  object-fit: coer;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   margin-right: 32px;
 }
 
@@ -18,8 +23,11 @@
 }
 
 .programming-icons {
-  display: flex;
-  flex-direction: row;
   width: fit-content;
-  margin-right: 24px;
+  margin-right: 32px;
+}
+
+.programming-icons span.icon {
+  font-family: $body-font;
+  font-size: 48px;
 }
