@@ -31,9 +31,14 @@ code span {
   margin-bottom: 8px;
 }
 
-
-@media screen and (max-width: 992px) {
-  .code-pane {
-    display: none !important;
-  }
+.me-json {
+  color: $light;
+  display: flex;
+  flex-direction: column;
 }
+
+// @media screen and (max-width: 992px) {
+//   .code-pane {
+//     display: none !important;
+//   }
+// }

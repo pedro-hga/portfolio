@@ -1,0 +1,19 @@
+<div class="project d-flex">
+  <img class="project-image" src=<%="../../#{page.data.image}"%> />
+  <div class="project-info">
+    <div class="project-info-text mt-3">
+      <h1 class="project-info-title fs-1 orange mb-4"><%= page.data.title %></h1>
+      <p class="project-info-description light">
+        <%= page.data.description %>
+      </p>
+    </div>
+    <div class="project-info-links mb-3">
+      <a href="<%= page.data.project_link %>" class="pt-3 card-project-about text-decoration-none blue" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+        Go to project
+      </a>
+      <a href="<%= page.data.github_link %>" class="pt-3 card-project-about text-decoration-none light" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+        <i class="fab fa-github"></i> Source code
+      </a>
+    </div>
+  </div>
+</div>
