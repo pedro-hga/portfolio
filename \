@@ -5,18 +5,18 @@ file_name: go_local
 image: images/go_local.svg
 project_link: http://www.golocal.lol
 github_link: https://github.com/pedro-hga/go-local
-description: "Go Local é uma plataforma que ajuda os usuários a descobrirem novos locais, fornecendo recomendações personalizadas de pessoas locais."
+description: "Go Local é uma plataforma que ajuda os usuários a descobrirem novos locais, fornecendo recomendações personalizadas de moradores locais."
 programming: [[, red],[, yellow],[, orange],[, pink],[, red],[󰊤, blue],[, blue],[, purple]]
 contributions: [
-["Introdução","O objetivo deste trabalho era o desenvolvimento full-stack de uma aplicação completa, com cada integrante responsável por desenvolver desde o back-end ao front-end algumas features. Somando a isso, a maior parte da minha colaboração foi relacionada ao desenvolvimento do front-end da aplicação."],
-["Design", "Concepção e desenvolvimento da identidade visual da marca, design da interface e componentes."],
+["Introdução","O objetivo deste trabalho era o desenvolvimento full-stack de uma aplicação completa, com cada integrante responsável por desenvolver desde o back-end ao front-end algumas features. Somando a isso, a maior parte da minha colaboração foi relacionada ao desenvolvimento do front-end da aplicação"],
+["Design", "Concepção e desenvolvimento da identidade visual da marca, design da interface e componentes"],
 ["Colaboração","Gerenciamento das features e alocação de trabalho no grupo"]
 ]
 ---
-<div id="panes-project" class="panes row h-100 fs-18" data-controller="display file-name">
+<div id="panes-project" class="panes row h-100" data-controller="display file-name">
   <div class="pane-left col-7 d-flex flex-column h-75">
     <%= render 'project_page' %>
-    <div class="line-break mt-5"></div>
+    <div class="line-break mt-5 mr-5"></div>
     <div class="programming-icons">
       <h2 class="project-info-title orange mb-4">Sobre o projeto</h2>
       <div class="light">
@@ -41,11 +41,13 @@ contributions: [
       <ul>
         <% page.data.contributions.each do |info| %>
           <span class="icon <%=info[1] %>">
-            <li class="fs-4 orange list-unstyled mb-5">
+            <li>
               <%= info[0] %>
-              <p class="light fs-18 list-unstyled mt-1">
-                <%= info[1] %>
-              </p>
+              <ul>
+                <li class="list-unstyled">
+                  <%= info[1] %>
+                </li>
+              </ul>
             </li>
           </span>
         <% end %>

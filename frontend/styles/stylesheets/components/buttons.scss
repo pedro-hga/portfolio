@@ -3,22 +3,20 @@
 }
 
 .btn-main {
-  border: 2px solid $blue;
+  outline: 2px solid $blue;
   color: $blue;
   margin-right: 16px;
 }
 
 .btn-alt {
-  border: 2px solid $light;
+  outline: 2px solid $light;
   color: $light;
 }
 
 .btn-main:hover {
-  border: 2px solid $blue;
-  color: $blue;
+  outline: 2px solid $light-fade;
 }
 
 .btn-alt:hover {
-  border: 2px solid $light;
-  color: $light;
+  outline: 2px solid $light-fade;
 }

@@ -3,40 +3,48 @@ layout: page
 title: From blueprints to code
 ---
 
-### Hi, I'm <span class="orange">Pedro!</span>
-#### <span class="pink">Full Stack Web Developer,</span>
-#### <span class="pink">Architect and Urban Planner</span>
+<h1 class="d-flex row fs-1">
+  <span class="mb-3">Oi, sou <span class="orange">Pedro!</span> </span>
+  <span class="pink fs-3">Desenvolvedor web full-stack,</span>
+  <span class="pink fs-3">Arquiteto e Urbanista</span>
+</h1>
 
 
 <div class="line-break"></div>
 
-<h3 class="orange fw-500">TL;DR</h3>
-
-From Architect and Urban Planner to Full Stack Web Developer, I thrive in collaborative workspaces and am enthusiastic about learning and problem-solving. Always curious about how people interact with things and what could we do to make it better.
+<p class="fw-bold orange fs-3">TL;DR</p>
+<p class="fs-18">
+  De Arquiteto e Urbanista para Desenvolvedor Full-stack, me desempenho bem em ambientes de trabalho colaborativos, empolgado com oportunidades de aprender e poder resolver problemas. Sempre curioso como as pessoas interagem com as coisas e o que podemos fazer para melhorá-las.
+</p>
 <div class="d-flex ">
-  <div class="btn btn-main">
-    CV in PDF
-  </div>
-  <div class="btn btn-alt">
-    CV in notion
-  </div>
+  <a class="btn btn-main" href="https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF" download="image">
+    CV em PDF
+  </a>
+  <a class="btn btn-alt" href="https://phga.notion.site/Curr-culo-5edc6e62d23945f38b28a32d4f5e3997?pvs=74">
+    CV no notion
+  </a>
 </div>
 <div class="line-break"></div>
 
 
-## From <span class="blue">blueprints</span> to <code class="red mono">{code}</code>
+## De <span class="blue"><em>modelos</em></span> para <span class="red mono">{código}</span>
 
 
 
-Before I stepped into the world of web development, I was an architect and urban planner, specialized in managing and coordination, both within projects and workflows into architectural offices. Over the past few years, my work in architecture involved a lot of detailed drawings and analysis that helped shape me into an educator, helping hundreds of students excel into a new era of architectural production with more and more complex software. This allowed me to move past working in an office to consulting practices, helping then offices to implement workflows and software that today are requirements to architectural production.
+Antes de ingressar no mundo do desenvolvimento web, eu era arquiteto e urbanista, especializado arquitetura digital (modelos 3D e _Building Information Modeling_) e em gerenciamento e coordenação, tanto gerenciamento de projetos quanto de fluxos de trabalho em escritórios de arquitetura. Ao longo dos últimos anos, a experiência adquirida em arquitetura possibilitou me tornar educador, auxiliando vários alunos a se destacarem em um mercado de produção arquitetônica cada vez mais exigente e com softwares cada vez mais complexos.
 
+Rapidamente, a experiência como educador e comunicador logo permitiu a migração de trabalhar em escritórios de arquitetura para um serviço de consultoria, ajudando escritórios a implementar fluxos de trabalho e softwares que hoje são requisitos para a produção arquitetônica. Ser especializado em arquitetura digital me levou a explorar o código dentro do meio arquitetônico, e há muito a ser feito para fundir código e arquitetura, desde programação visual (nodes), até design algorítmico, ciência de dados e assim por diante.
 
-Being specialized in digital architecture led me to tinker with code within the architectural realm, and there's a lot to be done to fuse both code and architecture together, from visual (nodes) programming, to algorithmic design, to data science, and the list goes on. At that point, I already knew that coding was what I wanted, but was at a class in my graduate course, that I got to venture myself with creating with code, which was a class on Processing, and then it all kind of fell into place, I wanted to create something that people could interact with on a daily basis, outside of the more abstract ways to deal with code within architecture, and that's when Web Development came into place.
+Nesse ponto, eu já sabia que a programação era o que eu queria, mas foi em uma aula do meu curso de pós-graduação que eu me aventurei a criar com código, que foi uma aula sobre Processing, e então tudo meio que se encaixou. Eu queria criar algo com que as pessoas pudessem interagir diariamente, fora das formas mais abstratas de lidar com código dentro da arquitetura, e foi aí que o desenvolvimento web entrou em cena.
 
+O desenvolvimento web me permite desfrutar de algumas coisas que eu sentia falta em arquitetura, como criar um produto para acessível para mais pessoas (ao invés de um imóvel com preços exorbitantes), e também mais oportunidades de colaboração, o que, em minha experiência, falta em arquitetura.
 
-Web development allows me to enjoy a couple of things that I missed in architecture, which was making a product for *everyone*, and collaboration, which surprisingly, in my experience, lacks in architecture. As far as the experience goes, there's a lot of similarities between architecture and coding, that gives me a solid foundation to approach a web development career, like handling of large and complex projects, as buildings are extremely complex, handling expectations, either from a client or user, and project management, being a BIM (Building Information Modeling) mananger. 
+No que diz respeito à experiência, há muitas semelhanças entre arquitetura e programação, o que me proporciona uma base sólida para abordar uma carreira em desenvolvimento web, como lidar com projetos grandes e complexos, já que edifícios são extremamente complexos, gerenciamento de expectativas, seja de um cliente ou usuários, e gerenciamento de projetos, por ser gerente de BIM (Modelagem de Informações de Construção).
 
-**Here's a few of my highlights:**
-- <span class="orange">Technical Proficiency:</span> I'm actively immersed and always curious in learning and understanding how the latest web development tools and frameworks can move things forward, ensuring my contributions are always relevant.
-- <span class="orange">Collaborative skills:</span> Having thrived in multidisciplinary teams throughout my architectural career and my work as an educator, I cultivated strong communication skills and the ability to seamlessly collaborate with diverse groups.
-- <span class="orange">Project Management Expertise:</span> From architectural projects to consulting, I have a proven track record of managing complex endeavors, ensuring efficient execution and successful outcomes.
+<span class="fs-5 orange"> **Alguns de meus destaques:** </span>
+- <span class="orange">Proficiência Técnica:</span>
+  - Sempre curioso em aprender e entender como as mais recentes ferramentas e frameworks de desenvolvimento web podem avançar as coisas, garantindo que minhas contribuições sejam sempre relevantes.
+- <span class="orange">Habilidades Colaborativas:</span>
+  - Tendo prosperado em equipes multidisciplinares ao longo de minha carreira arquitetônica e meu trabalho como educador, cultivei habilidades de comunicação sólidas e a capacidade de colaborar tranquilamente com grupos diversos.
+- <span class="orange">Experiência em Gerenciamento de Projetos:</span>
+  - De projetos arquitetônicos a consultorias, tenho um histórico comprovado de gerenciamento de empreendimentos complexos, garantindo uma execução eficiente e resultados bem-sucedidos.

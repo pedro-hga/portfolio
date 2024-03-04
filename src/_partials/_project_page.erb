@@ -1,19 +1,35 @@
-<div class="project d-flex">
+<div class="project">
   <img class="project-image" src=<%="../../#{page.data.image}"%> />
-  <div class="project-info">
-    <div class="project-info-text mt-3">
+  <div class="project-info" style="margin-right: 24px;">
+    <div class="project-info-text mt-3 mr-2">
       <h1 class="project-info-title fs-1 orange mb-4"><%= page.data.title %></h1>
-      <p class="project-info-description light">
+      <p class="project-info-description light" >
         <%= page.data.description %>
       </p>
     </div>
     <div class="project-info-links mb-3">
       <a href="<%= page.data.project_link %>" class="pt-3 card-project-about text-decoration-none blue" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-        Go to project
+        Ir ao projeto
       </a>
       <a href="<%= page.data.github_link %>" class="pt-3 card-project-about text-decoration-none light" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-        <i class="fab fa-github"></i> Source code
+        <i class="fab fa-github"></i> Código
       </a>
+    </div>
+  </div>
+  <div class="mobile-info d-flex row ">
+    <div class="mobile-project-info-text mt-3 mr-2">
+      <h1 class="mobile-project-info-title fs-1 orange mb-4"><%= page.data.title %></h1>
+      <p class="mobile-project-info-description light">
+        <%= page.data.description %>
+      </p>
+      <div class="mobile-project-info-links-mobile mb-3">
+        <a href="<%= page.data.project_link %>" class="pt-3 card-project-about text-decoration-none blue" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+          Ir ao projeto
+        </a>
+        <a href="<%= page.data.github_link %>" class="pt-3 card-project-about text-decoration-none light" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+          <i class="fab fa-github"></i> Código
+        </a>
+      </div>
     </div>
   </div>
 </div>
