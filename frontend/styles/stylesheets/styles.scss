@@ -25,6 +25,11 @@ main {
   font-family: $body-font;
 }
 
+.link:hover {
+  color: $blue-dark;
+  transition: $blue-dark 0.3s ease;
+}
+
 @media screen and (max-width: 992px) {
   .mobile-container {
     padding: 16px 16px;

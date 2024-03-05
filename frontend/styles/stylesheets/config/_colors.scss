@@ -3,6 +3,7 @@ $bg0: #252535;
 $light: #DCD7BA;
 $light-fade: hsl(220, 19%, 54%, 0.6);
 $blue: #5299B7;
+$blue-dark: #366B81;
 $orange: #FE9F66;
 $green0: #76946A;
 $green1: #98BB6C;
@@ -49,6 +50,10 @@ $pink: #D27E99;
 
 .green {
   color: $green1;
+}
+
+.blue-dark {
+  color: $blue-dark;
 }
 
 .blue {
