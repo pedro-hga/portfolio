@@ -1,6 +1,6 @@
 ---
 layout: page
-title: From blueprints to code
+title: README
 ---
 
 <h1 class="d-flex row fs-1">

@@ -4,18 +4,18 @@ layout: default
 <div id="panes" class="panes row h-100" data-controller="display file-name">
   <div class="return-pane pane-left col-7 d-flex flex-column h-75">
     <h1 class="mb-3" data-action="mouseenter->display#changeDisplay mouseout->display#changeDisplay"><span class="red"><b>❯</b> </span><span class="purple">node contact_me.js</span></h1>
-    <h5 class="light-fade mb-5" data-action="mouseenter->display#changeDisplay mouseout->display#changeDisplay"><em># Hover to see the full function</em></h5>
-      <span><span class="red"><a href="mailto:pedro_hga@proton.me" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref"
+    <h5 class="light-fade mb-5" data-action="mouseenter->display#changeDisplay mouseout->display#changeDisplay"><em># Passe o mouse para ver a função completa</em></h5>
+      <span><span class="red"><a href="mailto:pedro_hga@proton.me?subject=Olá!&body=Escreva%20seu%20texto%20aqui." data-action="mouseover->move-element#getHref mouseout->move-element#resetHref"
         class="contact-link red text-decoration-none">contact</span>(<span class="green">'me.json'</span>)</a></span>
       <div class="line-break"></div>
     <h1 class="mb-3"><span class="red"><b>❯</b> </span><span class="purple">cat me.json</span></h1>
     <span class="code-1 light">{</span>
-    <span class="code-2 light"><span class="green">"name"</span>: "Pedro Henrique", </span>
+    <span class="code-2 light"><span class="green">"nome"</span>: "Pedro Henrique", </span>
     <span class="code-2 light"><span class="green">"email"</span>:
-      <a href="mailto:pedro_hga@proton.me" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref"
+      <a href="mailto:pedro_hga@proton.me?subject=Olá!&body=Escreva%20seu%20texto%20aqui." data-action="mouseover->move-element#getHref mouseout->move-element#resetHref"
         class="contact-link text-decoration-none blue">"pedro_hga@proton.me"</a>, </span>
-    <span class="code-2 light"><span class="green">"currentLocation"</span>: "São Paulo, Brazil", </span>
-    <span class="code-2 light"><span class="green">"phone"</span>: "+55 11 986-786-862", </span>
+    <span class="code-2 light"><span class="green">"localizaçãoAtual"</span>: "São Paulo, Brazil", </span>
+    <span class="code-2 light"><span class="green">"celular"</span>: "+55 11 986-786-862", </span>
     <span class="code-2 light"><span class="green">"linkedin"</span>:
       <a href="https://www.linkedin.com/in/pedrohga" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref"
         class="contact-link text-decoration-none blue">"in/pedrohga"</a>, </span>
@@ -26,11 +26,11 @@ layout: default
   </div>
   <div class="code-pane light pane-right col-5 d-flex flex-column h-100">
     <div class="response d-none" data-display-target="response">
-    <code class="light">
-    <span class="light-fade"><em># feel free to say hi!</em></span>
-      <span><span class="blue mb-1">async function</span> <span class="red">contact</span>(fileName) {</span>
+    <code class="light lh-sm">
+    <span class="light-fade"><em># diga olá!</em></span>
+      <span><span class="blue mb-1">async function</span> <span class="red">contact</span>(json) {</span>
       <span class="code-1"><span class="pl-2 blue">try</span> {</span>
-      <span class="code-2"> <span class="blue">const</span> response = <span class="blue">await</span> <span class="red">fetch</span>(fileName)<span class="orange">;</span> </span>
+      <span class="code-2"> <span class="blue">const</span> response = <span class="blue">await</span> <span class="red">fetch</span>(json)<span class="orange">;</span> </span>
       <span class="code-2"> <span class="blue">if</span> (!response.ok) { </span>
       <span class="code-2"> <span class="blue">throw new</span> <span class="red">Error</span>(<span class="green">'Failed to fetch the JSON file.'</span>)<span class="orange">;</span> </span>
       <span class="code-2">}</span>
@@ -39,8 +39,12 @@ layout: default
       <span>} <span class="blue">catch</span> (error) { </span>
       <span class="code-2"> <span class="blue">return</span> { <span class="pink">error</span>: error.message }<span class="orange">;</span> </span>
       <span class="code-2"> } </span>
-      <span>}</span>
-      <span><span class="red"><a href="mailto:pedro_hga@proton.me" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref"
+      <span class="code-2"><span class="blue">const</span> recipient = <span class="red">json.</span><span class="pink">email</span></span>
+      <span class="code-2"><span class="blue">const</span> subject = <span class="green">'Olá!'</span>;</span>
+      <span class="code-2"><span class="blue">const</span> body = <span class="green">'Escreva seu texto aqui'</span>;</span>
+      <span class="code-2"><span class="blue">const</span> mailTo = <span class="green">`mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`</span>;</span>
+  <span>}</span>
+      <span><span class=""><a href="mailto:pedro_hga@proton.me?subject=Olá!&body=Escreva%20seu%texto%aqui." data-action="mouseover->move-element#getHref mouseout->move-element#resetHref"
         class="contact-link red text-decoration-none">contact</span>(<span class="green">'me.json'</span>)</a></span>
     </code>
     </div>

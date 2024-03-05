@@ -19,7 +19,8 @@ export default class extends Controller {
       "http://www.golocal.lol": "ln -s http://www.golocal.lol ./golocal.html",
       "https://guide-me-app-c2d673a36c32.herokuapp.com/":
         "ln -s http://www.guide-me.com ./guide-me.html",
-      "mailto:pedro_hga@proton.me": "node contact_me.js",
+      "mailto:pedro_hga@proton.me?subject=Olá!&body=Escreva%20seu%20texto%20aqui.":
+        "node contact_me.js",
       "https://github.com/pedro-hga/go-local":
         "gh repo view pedro-hga/go-local",
       "https://github.com/pedro-hga/guide-me":
