@@ -20,7 +20,7 @@ title: Sobre
   <a class="btn btn-main" href="https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
     CV em PDF
   </a>
-  <a class="btn btn-main" href="https://phga.notion.site/Curr-culo-5edc6e62d23945f38b28a32d4f5e3997?pvs=74" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+  <a class="btn btn-main" href="https://pedro-hga.notion.site/Pedro-Henrique-5edc6e62d23945f38b28a32d4f5e3997" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
     CV no notion
   </a>
 </div>

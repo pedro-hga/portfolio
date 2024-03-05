@@ -17,7 +17,7 @@ export default class extends Controller {
     const customText = {
       "https://github.com/pedro-hga": "gh project list --owner pedro",
       "http://www.golocal.lol": "ln -s http://www.golocal.lol ./golocal.html",
-      "https://phga.notion.site/Curr-culo-5edc6e62d23945f38b28a32d4f5e3997?pvs=74":
+      "https://pedro-hga.notion.site/Pedro-Henrique-5edc6e62d23945f38b28a32d4f5e3997":
         "ln -s http://www.notion.so ./notion.html",
       "https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF":
         "curl -O https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF",
