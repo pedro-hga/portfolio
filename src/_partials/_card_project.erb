@@ -4,6 +4,7 @@
     <div class="card-project-info my-3">
       <div class="card-project-title">
         <a href="<%= project.relative_url %>"
+          target="_blank"
               class="card-project-about text-decoration-none orange"
               data-project-file="<%= project.data.file_name %>"
               data-action=
@@ -23,8 +24,8 @@
         <a href="<%= project.data.project_link %>" class="pt-3 card-project-about text-decoration-none blue" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
           Ir ao projeto
         </a>
-        <a href="<%= project.data.github_link %>" class="pt-3 card-project-about text-decoration-none light" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-          <i class="fab fa-github"></i> Source code
+        <a href="<%= project.data.github_link %>" class="pt-3 card-project-about text-decoration-none blue" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+          <i class="fab fa-github"></i> Código
         </a>
       </div>
     </div>

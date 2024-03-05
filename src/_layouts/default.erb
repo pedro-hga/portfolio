@@ -5,7 +5,7 @@
   </head>
   <body class="<%= data.layout %> <%= data.page_class %> " data-controller="move-element find-directory" >
     <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
-    <main class="container">
+    <main class="container mobile-container">
       <%= yield %>
     </main>
   </body>
