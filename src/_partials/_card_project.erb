@@ -1,19 +1,16 @@
 <% collections.projects.resources.each do |project| %>
-  <div class="card-project mb-5" >
+  <div class="card-project mb-5" data-project-file="<%= project.data.file_name %>" data-action="mouseover->display#changeDisplay mouseout->display#changeDisplay mouseover->file-name#getFileName mouseout->file-name#reset">
     <img class="card-project-image" src=<%= project.data.image %> />
     <div class="card-project-info my-3">
       <div class="card-project-title">
         <a href="<%= project.relative_url %>"
               class="card-project-about text-decoration-none orange"
               data-project-file="<%= project.data.file_name %>"
-              data-action=
-              "mouseenter->move-element#getHref mouseout->move-element#resetHref
-          mouseenter->display#changeDisplay mouseout->display#changeDisplay
-          mouseenter->file-name#getFileName mouseout->file-name#reset">
+              data-action= "mouseover->move-element#getHref mouseout->move-element#resetHref ">
           <h2 class="orange"><%= project.data.title %></h2>
         </a>
       </div>
-      <div class="card-project-description mb-3">
+      <div class="card-project-description mb-3" >
         <p><%= project.data.description %></p>
       </div>
       <div class="card-project-links">
