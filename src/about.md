@@ -14,13 +14,13 @@ title: Sobre
 
 <p class="fw-bold orange fs-3">TL;DR</p>
 <p class="fs-18">
-  De Arquiteto e Urbanista para Desenvolvedor Full-stack, me desempenho bem em ambientes de trabalho colaborativos, empolgado com oportunidades de aprender e poder resolver problemas. Sempre curioso como as pessoas interagem com as coisas e o que podemos fazer para melhorá-las.
+  De Arquiteto e Urbanista para Desenvolvedor Full-stack, me desempenho bem em ambientes de trabalho colaborativos, empolgado com oportunidades de aprender e poder resolver problemas. Sempre curioso como as pessoas interagem com o que projetamos e o que podemos fazer para melhorá-los.
 </p>
 <div class="d-flex ">
-  <a class="btn btn-main" href="https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+  <a class="btn-main" href="https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
     CV em PDF
   </a>
-  <a class="btn btn-main" href="https://pedro-hga.notion.site/Pedro-Henrique-5edc6e62d23945f38b28a32d4f5e3997" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+  <a class="btn-main" href="https://pedro-hga.notion.site/Pedro-Henrique-5edc6e62d23945f38b28a32d4f5e3997" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
     CV no notion
   </a>
 </div>

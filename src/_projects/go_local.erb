@@ -14,6 +14,11 @@ contributions: [
 ]
 ---
 <div id="panes-project" class="panes row h-100 fs-18" data-controller="display file-name">
+  <div class="back-link ">
+    <a href="<%= relative_url '/projects' %>" class="blue link text-decoration-none" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+      Voltar para projetos
+    </a>
+  </div>
   <div class="pane-left col-7 d-flex flex-column h-75">
     <%= render 'project_page' %>
     <div class="line-break mt-5"></div>

@@ -1,6 +1,6 @@
 code {
   font-family: $body-font;
-  font-size: 18px;
+  font-size: $fs-18 !important;
   display: flex;
   flex-direction: column;
   white-space: pre-wrap;
@@ -42,3 +42,5 @@ code span {
 //     display: none !important;
 //   }
 // }
+//
+//
