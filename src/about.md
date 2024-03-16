@@ -14,7 +14,7 @@ title: Sobre
 
 <p class="fw-bold orange fs-3">TL;DR</p>
 <p class="fs-18">
-  De Arquiteto e Urbanista para Desenvolvedor Full-stack, me desempenho bem em ambientes de trabalho colaborativos, empolgado com oportunidades de aprender e poder resolver problemas. Sempre curioso como as pessoas interagem com o que projetamos e o que podemos fazer para melhorá-los.
+  De Arquiteto e Urbanista para Desenvolvedor Full-stack, me desempenho bem em ambientes de trabalho colaborativos, empolgado com oportunidades de aprender e poder resolver problemas. Sempre curioso como as pessoas interagem com o que projetamos e o que podemos fazer para melhorá-los.  Minha expertise concentra-se no uso de Ruby on Rails + Hotwire, JavaScript (VanillaJS, Stimulus), SCSS/SASS e HTML para desenvolvimento de aplicações completas.
 </p>
 <div class="d-flex ">
   <a class="btn-main" href="https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
@@ -27,8 +27,18 @@ title: Sobre
 <div class="line-break"></div>
 
 
-## De <span class="blue"><em>modelos</em></span> para <span class="red mono">{código}</span>
+<span class="fs-5 orange"> **Alguns de meus destaques:** </span>
+- <span class="orange">Proficiência Técnica:</span>
+  - Sou dedicado a aprimorar constantemente minhas habilidades técnicas, mantendo-me atualizado com as mais recentes ferramentas e tecnologias de desenvolvimento. Meu enfoque está na eficácia e na entrega de resultados sólidos, utilizando uma abordagem prática e orientada para soluções
+- <span class="orange">Habilidades Colaborativas:</span>
+  - Como parte integrante de equipes multidisciplinares ao longo da minha carreira como arquiteto e educador, desenvolvi habilidades robustas de comunicação e uma capacidade aprimorada de colaborar harmoniosamente com grupos diversos.
+- <span class="orange">Experiência em Gerenciamento de Projetos:</span>
+  - Desde projetos arquitetônicos até consultorias, demonstro um histórico sólido no gerenciamento de empreendimentos complexos, garantindo uma execução eficiente e alcançando resultados bem-sucedidos.
 
+
+<div class="line-break"></div>
+
+## De <span class="blue"><em>modelos</em></span> para <span class="red mono">{código}</span>
 
 
 Antes de ingressar no mundo do desenvolvimento web, eu era arquiteto e urbanista, especializado arquitetura digital (modelos 3D e _Building Information Modeling_) e em gerenciamento e coordenação, tanto gerenciamento de projetos quanto de fluxos de trabalho em escritórios de arquitetura. Ao longo dos últimos anos, a experiência adquirida em arquitetura possibilitou me tornar educador, auxiliando vários alunos a se destacarem em um mercado de produção arquitetônica cada vez mais exigente e com softwares cada vez mais complexos.
@@ -41,10 +51,3 @@ O desenvolvimento web me permite desfrutar de algumas coisas que eu sentia falta
 
 No que diz respeito à experiência, há muitas semelhanças entre arquitetura e programação, o que me proporciona uma base sólida para abordar uma carreira em desenvolvimento web, como lidar com projetos grandes e complexos, já que edifícios são extremamente complexos, gerenciamento de expectativas, seja de um cliente ou usuários, e gerenciamento de projetos, por ser gerente de BIM (Modelagem de Informações de Construção).
 
-<span class="fs-5 orange"> **Alguns de meus destaques:** </span>
-- <span class="orange">Proficiência Técnica:</span>
-  - Sempre curioso em aprender e entender como as mais recentes ferramentas e frameworks de desenvolvimento web podem avançar as coisas, garantindo que minhas contribuições sejam sempre relevantes.
-- <span class="orange">Habilidades Colaborativas:</span>
-  - Tendo prosperado em equipes multidisciplinares ao longo de minha carreira arquitetônica e meu trabalho como educador, cultivei habilidades de comunicação sólidas e a capacidade de colaborar tranquilamente com grupos diversos.
-- <span class="orange">Experiência em Gerenciamento de Projetos:</span>
-  - De projetos arquitetônicos a consultorias, tenho um histórico comprovado de gerenciamento de empreendimentos complexos, garantindo uma execução eficiente e resultados bem-sucedidos.
