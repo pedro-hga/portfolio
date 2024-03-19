@@ -1,44 +1,84 @@
 ---
 layout: default
+locale: multi
+locales:
+- pt-BR
+- en
 ---
 <div id="panes" class="panes row h-100">
   <div class="pane-left col-7 d-flex flex-column h-100">
     <span class="pane-command ">
       <h1><span class="red"><b>~</b> </span><span class="purple">whoami</span></h1>
-      <h5 class="light-fade"><em># retorna o usuário</em></h4>
+      <% if site.locale == :'pt-BR' %>
+        <h5 class="light-fade"><em># retorna o usuário</em></h4>
+      <% elsif site.locale == :en %>
+        <h5 class="light-fade"><em># returns the user</em></h4>
+      <% end %>
     </span>
     <div class="pane-return">
-      <p class="fs-2">
-        Oi! Sou <span class="orange">Pedro, desenvolvedor web full-stack</span> localizado em <span class="purple">São Paulo</span>.
-        Eu gosto de <span class="red">colaborar</span> com pessoas para criar <a href="<%= relative_url '/projects' %>" class="text-decoration-none red" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-          projetos incríveis</a>.
-      </p>
-      <div class="d-flex ">
-        <a class="btn-main fs-18" href="https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-          CV em PDF
-        </a>
-        <a class="btn-main fs-18" href="https://pedro-hga.notion.site/Pedro-Henrique-5edc6e62d23945f38b28a32d4f5e3997" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-          CV no notion
-        </a>
-      </div>
+      <% if site.locale == :'pt-BR' %>
+        <p class="fs-2">
+          Oi! Sou <span class="orange">Pedro, desenvolvedor web full-stack</span> localizado em <span class="purple">São Paulo</span>.
+          Eu gosto de <span class="red">colaborar</span> com pessoas para criar <a href="<%= relative_url '/projects' %>" class="text-decoration-none red" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+            projetos incríveis</a>.
+        </p>
+        <div class="d-flex ">
+          <a class="btn-main fs-18" href="https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+            CV em PDF
+          </a>
+          <a class="btn-main fs-18" href="https://pedro-hga.notion.site/Pedro-Henrique-5edc6e62d23945f38b28a32d4f5e3997" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+            CV no notion
+          </a>
+        </div>
+      <% elsif site.locale == :en %>
+        <p class="fs-2">
+          Hi! I'm <span class="orange">Pedro, full-stack web developer</span> based in <span class="purple">São Paulo, Brazil</span>.
+          I like <span class="red">to collaborate</span> with people to create <a href="<%= relative_url '/projects' %>" class="text-decoration-none red" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+            amazing projects</a>.
+        </p>
+        <div class="d-flex ">
+          <a class="btn-main fs-18" href="https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+            PDF Resume
+          </a>
+          <a class="btn-main fs-18" href="https://pedro-hga.notion.site/Pedro-Henrique-5edc6e62d23945f38b28a32d4f5e3997" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+            Notion Resume
+          </a>
+        </div>
+      <% end %>
     </div>
   </div>
   <div class="pane-right col-5 d-flex flex-column h-100">
     <div class="pane-command">
       <h1><span class="red"><b>~</b> </span><span class="purple">ls</span></h1>
-      <h5 class="light-fade "><em># retorna uma lista com os conteúdos da pasta</em></h3>
+      <% if site.locale == :'pt-BR' %>
+        <h5 class="light-fade"><em># retorna uma lista com os conteúdos da pasta</em></h4>
+      <% elsif site.locale == :en %>
+        <h5 class="light-fade"><em># returns a list with directory contents</em></h4>
+      <% end %>
     </div>
     <div class="pane-return green">
       <ul class="list-unstyled">
-        <li class="fs-2"><a href="<%= relative_url '/projects' %>" class="blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-            projetos/
-          </a></li>
-        <li class="fs-2"><a href="<%= relative_url '/contact_me' %>" class="blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-            contato.js
-          </a></li>
-        <li class="fs-2"><a href="<%= relative_url '/about' %>" class="blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-            sobre-mim.md
-          </a></li>
+        <% if site.locale == :'pt-BR' %>
+          <li class="fs-2"><a href="<%= relative_url '/projects' %>" class="blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+              projetos/
+            </a></li>
+          <li class="fs-2"><a href="<%= relative_url '/contact_me' %>" class="blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+              contato.js
+            </a></li>
+          <li class="fs-2"><a href="<%= relative_url '/about' %>" class="blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+              sobre-mim.md
+            </a></li>
+        <% elsif site.locale == :en %>
+          <li class="fs-2"><a href="<%= relative_url '/en/projects' %>" class="blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+              projects/
+            </a></li>
+          <li class="fs-2"><a href="<%= relative_url '/en/contact_me' %>" class="blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+              contact_me.js
+            </a></li>
+          <li class="fs-2"><a href="<%= relative_url '/en/about' %>" class="blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+              README.md
+            </a></li>
+        <% end %>
       </ul>
     </div>
   </div>

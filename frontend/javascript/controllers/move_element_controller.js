@@ -32,11 +32,15 @@ export default class extends Controller {
       "https://www.linkedin.com/in/pedrohga":
         "ln -s https://www.linkedin.com/in/pedrohga ./linkedin.html",
       "/": "cd ~/home",
-      "/about": "nvim README.md",
+      "/about": "nvim sobre-mim.md",
+      "/en/about": "nvim README.md",
+
       "/projects": "cd ~/home/projetos",
+      "/en/projects": "cd ~/home/projects",
       "/projects/go_local/": "cd go_local/",
       "/projects/guide_me/": "cd guide_me/",
       "/contact_me": "node contato.js",
+      "/en/contact_me": "node contact_me.js",
     };
     return customText[href] || "";
   }

@@ -1,5 +1,5 @@
 <% collections.projects.resources.each do |project| %>
-  <% if project.data.language != 'en' %>
+  <% if project.data.language == 'en' %>
     <div class="card-project mb-5" data-project-file="<%= project.data.file_name %>" data-action="mouseover->display#changeDisplay mouseout->display#changeDisplay mouseover->file-name#getFileName mouseout->file-name#reset">
       <img class="card-project-image" src=<%= project.data.image %> />
       <div class="card-project-info my-3">
@@ -16,13 +16,13 @@
         </div>
         <div class="card-project-links">
           <a href="<%= project.relative_url %>" class="card-project-about text-decoration-none blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-            Sobre
+            About
           </a>
           <a href="<%= project.data.project_link %>" target="_blank" class="pt-3 card-project-about text-decoration-none blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-            Ir ao projeto
+            Go to project
           </a>
           <a href="<%= project.data.github_link %>" target="_blank" class="pt-3 card-project-about text-decoration-none blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-            <i class="fab fa-github"></i> Código
+            <i class="fab fa-github"></i> Source code
           </a>
         </div>
       </div>

@@ -10,7 +10,11 @@ export default class extends Controller {
 
   async interpolate(projectFile) {
     try {
-      const response = await fetch(`dsc_${projectFile}`);
+      const locale = document.documentElement.lang;
+
+      const fetchURL =
+        locale !== "pt-BR" ? `/en/dsc_${projectFile}` : `/dsc_${projectFile}`;
+      const response = await fetch(fetchURL);
       if (!response.ok) {
         throw new Error("Fetch failed");
       }
