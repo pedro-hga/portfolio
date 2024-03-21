@@ -1,6 +1,6 @@
 // color palette
-$bg0: #252535;
-$light: #DCD7BA;
+$bg0: #1e2326;
+$light: #d3c6aa;
 $light-fade: hsl(220, 19%, 54%, 0.6);
 $blue: #5299B7;
 $blue-dark: #366B81;
@@ -64,6 +64,9 @@ $pink: #D27E99;
   color: $yellow;
 }
 
+.grey {
+  color: $grey;
+}
 .pink {
   color: $pink;
 }
