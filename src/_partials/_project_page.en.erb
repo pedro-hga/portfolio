@@ -1,9 +1,5 @@
 <div class="project">
-  <% if I18n.locale == :'pt-BR' %>
-    <img class="project-image" src=<%="../../#{page.data.image}"%> />
-  <% else %>
-    <img class="project-image" src=<%="../../../#{page.data.image}"%> />
-  <% end %>
+  <img class="project-image" src=<%="../../../#{page.data.image}"%> />
   <div class="project-info" style="margin-right: 24px;">
     <div class="project-info-text mt-3 mr-2">
       <h1 class="project-info-title-main fs-1 orange mb-4"><%= page.data.title %></h1>
@@ -13,10 +9,10 @@
     </div>
     <div class="project-info-links mb-3">
       <a href="<%= page.data.project_link %>" target="_blank" class="pt-3 card-project-about text-decoration-none blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-        Ir ao projeto
+        Go to project
       </a>
       <a href="<%= page.data.github_link %>" class="pt-3 card-project-about text-decoration-none blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-        <i class="fab fa-github"></i> Código
+        <i class="fab fa-github"></i> Source code
       </a>
     </div>
   </div>

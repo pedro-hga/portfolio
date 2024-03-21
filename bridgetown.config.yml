@@ -33,8 +33,14 @@ template_engine: erb
 # pagination:
 #   enabled: true
 
+
+available_locales: [en, pt-BR]
+default_locale: pt-BR
+prefix_default_locale: false
+
 collections:
   projects:
     relative_directory: _projects
     output: true
     permalink: simple
+

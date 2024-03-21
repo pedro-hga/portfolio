@@ -1,10 +1,17 @@
 <nav id="navbar" class="navbar container m-auto px-3">
   <div class="terminal row">
     <div class="terminal-path">
-      <a href="<%= relative_url '/'%>" class="text-decoration-none blue link"
-          data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-        <span>~/home</span><span class="blue" data-find-directory-target="link">
-        </a></span>
+      <% if I18n.locale == :'pt-BR' %>
+        <a href="<%= relative_url '/' %>" class="text-decoration-none blue link"
+     data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+          <span>~/home</span><span class="blue" data-find-directory-target="link"></span>
+        </a>
+      <% else %>
+        <a href="/<%= I18n.locale %>/" class="text-decoration-none blue link"
+     data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+          <span>~/home</span><span class="blue" data-find-directory-target="link"></span>
+        </a>
+      <% end %>
     </div>
     <div class="terminal-command">
       <b>❯</b>
@@ -13,22 +20,32 @@
     </div>
   </div>
   <div class="nav-link">
-    <a href="mailto:pedro_hga@proton.me?subject=Olá!&body=Escreva%20seu%20texto%20aqui." target="_blank"
+    <% resource.all_locales.each do |local_resource| %>
+      <% if local_resource.data.locale != I18n.locale %>
+        <%= link_to local_resource.relative_url, class: "text-decoration-none nav-link-left fs-5" do %>
+          <% if local_resource.data.locale == :en %>
+            <span class="green">pt-BR</span> <span class="light"><-</span> <span class="grey">en</span>
+              <% elsif local_resource.data.locale == :'pt-BR' %>
+                <span class="grey">pt-BR</span> <span class="light">-></span> <span class="green">en</span>
+              <% end %>
+            <% end %>
+          <% end %>
+        <% end %>
+        <a href="mailto:pedro_hga@proton.me?subject=Olá!&body=Escreva%20seu%20texto%20aqui." target="_blank"
                                            style="margin-right: 16px;"
                                            class="fs-1 nav-icon text-decoration-none nav-link-left"
                                            data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-      󰇮
-    </a>
-    <a href="https://github.com/pedro-hga" target="_blank"
+          󰇮 </a>
+        <a href="https://github.com/pedro-hga" target="_blank"
                                            style="margin-right: 16px;"
                                            class="fs-1 nav-icon text-decoration-none nav-link-left"
                                            data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-      
-    </a>
-    <a href="https://www.linkedin.com/in/pedrohga" target="_blank"
+          
+        </a>
+        <a href="https://www.linkedin.com/in/pedrohga" target="_blank"
                                                    class="fs-1 nav-icon text-decoration-none"
                                                    data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-      󰌻
-    </a>
-  </div>
-</nav>
+          󰌻
+        </a>
+      </div>
+    </nav>

@@ -5,6 +5,5 @@
 # in the templates via {{ site.metadata.myvariable }}.
 
 title: Pedro Henrique
-email: pedro_hga@proton.me
 description: >-
   Pedro Henrique. Desenvolvedor web full-stack e arquiteto e urbanista localiizado em São Paulo. Eu gosto de colaborar com pessoas para criar projetos incríveis.

@@ -3,15 +3,15 @@ layout: empty
 programming: [[, red],[, yellow],[, orange],[, pink],[, purple]]
 deploy: [[, red],[󰊤, blue],[, blue],[, purple]]
 ---
-<h1><span class="pink"><b>~</b> </span><span class="purple">cat guide_me.md</span></h1>
-<h5 class="mb-5 light-fade"><em># pré-visualiza o arquivo</em></h4>
-<h2 class="orange">Guide me</h2>
+<h1><span class="pink"><b>~</b> </span><span class="purple">cat go_local.md</span></h1>
+<h5 class="mb-5 light-fade"><em># previews the file</em></h4>
+<h2 class="mt-3 orange">Go local</h2>
 <div class="light mb-5">
-  <%= collections.projects.resources[3].data.description %>
+  <%= collections.projects.resources[0].data.description %>
 </div>
 <div class="line-break"></div>
 <div class="programming-icons">
-  <p class="mt-5 mb-1 fs-5">Feito com:</p>
+  <p class="mt-5 mb-1 fs-5">Built with:</p>
   <div>
     <% page.data.programming.each do |info| %>
       <span class="icon <%=info[1] %>">
