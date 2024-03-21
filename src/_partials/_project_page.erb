@@ -1,9 +1,5 @@
 <div class="project">
-  <% if I18n.locale == :'pt-BR' %>
-    <img class="project-image" src=<%="../../#{page.data.image}"%> />
-  <% else %>
-    <img class="project-image" src=<%="../../../#{page.data.image}"%> />
-  <% end %>
+  <img class="project-image" src=<%="../../#{page.data.image_project}"%> />
   <div class="project-info" style="margin-right: 24px;">
     <div class="project-info-text mt-3 mr-2">
       <h1 class="project-info-title-main fs-1 orange mb-4"><%= page.data.title %></h1>
