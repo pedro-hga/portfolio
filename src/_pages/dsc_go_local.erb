@@ -14,14 +14,14 @@ deploy: [[, red],[󰊤, blue],[, blue],[, purple]]
   <p class="mt-5 mb-1 fs-5">Feito com:</p>
   <div>
     <% page.data.programming.each do |info| %>
-      <span class="icon">
+      <span class="icon <%= info[1] %>">
         <%= info[0] %>
       </span>
     <% end %>
   </div>
   <div>
     <% page.data.deploy.each do |info| %>
-      <span class="icon">
+      <span class="icon <%= info[1] %>">
         <%= info[0] %>
       </span>
     <% end %>
