@@ -17,10 +17,10 @@ title: About
 </p>
 
 <div class="d-flex ">
-  <a class="btn-main" href="https://1drv.ms/b/s!AikTJ5jzHHqPqahXQxl_nHizzJgoIA?e=uQfjaF" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+  <a class="btn-main fs-18" href="https://1drv.ms/b/s!AikTJ5jzHHqPqaoeHKSphxo_mPhMhQ?e=9yYBsA" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
     PDF Resume
   </a>
-  <a class="btn-main" href="https://pedro-hga.notion.site/Pedro-Henrique-5edc6e62d23945f38b28a32d4f5e3997" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+  <a class="btn-main fs-18" href="https://pedro-hga.notion.site/Pedro-Henrique-0551f7070c0a45e2a03ff31fdead980c" target="_blank" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
     Notion Resume
   </a>
 </div>

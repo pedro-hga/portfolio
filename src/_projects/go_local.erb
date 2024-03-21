@@ -6,30 +6,18 @@ image: /images/go_local.svg
 project_link: http://www.golocal.lol
 github_link: https://github.com/pedro-hga/go-local
 description: "Go Local é uma plataforma que ajuda os usuários a descobrirem novos locais, fornecendo recomendações personalizadas de pessoas locais."
-programming: [[, red],[, yellow],[, orange],[, pink],[, red],[󰊤, blue],[, blue],[, purple]]
-contributions: [
-["Introdução","O objetivo deste trabalho era o desenvolvimento full-stack de uma aplicação completa, com cada integrante responsável por desenvolver desde o back-end ao front-end algumas features. Somando a isso, a maior parte da minha colaboração foi relacionada ao desenvolvimento do front-end da aplicação."],
-["Design", "Concepção e desenvolvimento da identidade visual da marca, design da interface e componentes."],
-["Colaboração","Gerenciamento das features e alocação de trabalho no grupo"]
-]
+about: "O objetivo deste projeto foi o desenvolvimento full-stack de uma aplicação completa, com cada membro da equipe responsável por desenvolver pelo menos uma funcionalidade, desde o back-end até o front-end. Somado a isso, parte majoritária da minha contribuição estava relacionada ao desenvolvimento do front-end da aplicação."
+programming: [[, red],[, red],[, yellow],[, orange],[, pink],[, purple],[󰊤, blue],[, blue],[, purple]]
 ---
 <div id="panes-project" class="panes row h-100 fs-18" data-controller="display file-name">
   <div class="back-link ">
     <a href="<%= relative_url '/projects' %>" class="blue link text-decoration-none" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-      Voltar para projetos
+      Voltar aos projetos
     </a>
   </div>
   <div class="pane-left col-7 d-flex flex-column h-75">
     <%= render 'project_page' %>
-    <div class="line-break mt-5"></div>
     <div class="programming-icons">
-      <h2 class="project-info-title orange mb-4">Sobre o projeto</h2>
-      <div class="light">
-        <p>Go local é um projeto conceitual para criar um espaço onde pessoas locais podem compartilhar eventos e lugares a fim de criar uma comunidade fortalecida e sustentável e compartilhar sua cultura com outras pessoas.</p>
-        <p></p>
-        <p>O projeto foi criado para o curso de<a href="https://www.lewagon.com/web-development-course" target="_blank" class="text-decoration-none blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref"> Desenvolvimento Web da Le Wagon</a>.
-          Esta foi uma tarefa em grupo realizada ao longo de duas semanas.</p>
-      </div>
       <p class="mt-5 mb-1 fs-5">Feito com:</p>
       <div>
         <% page.data.programming.each do |info| %>
@@ -39,15 +27,23 @@ contributions: [
         <% end %>
       </div>
     </div>
+    <div class="line-break mt-4"></div>
+    <h2 class="project-info-title orange mb-4">Sobre o projeto</h2>
+    <div class="light">
+      <p>Go local é um projeto conceitual para criar um espaço onde pessoas locais podem compartilhar eventos e lugares a fim de criar uma comunidade fortalecida e sustentável e compartilhar sua cultura com outras pessoas.</p>
+      <p><%= page.data.about %></p>
+      <p>O projeto foi criado para o curso de<a href="https://www.lewagon.com/web-development-course" target="_blank" class="text-decoration-none blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref"> Desenvolvimento Web da Le Wagon</a>.
+        Esta foi uma tarefa em grupo realizada ao longo de duas semanas.</p>
+    </div>
   </div>
   <div class="pane-right col-5 d-flex row h-100">
     <div class="project-info-contributions">
-      <h2 class="project-info-title fs-1 mt-5 orange mb-4">Contribuições</h2>
+      <h2 class="project-info-title fs-1 mt-5 orange mb-4">Desafios e aprendizados</h2>
       <div class="light fs-18 list-unstyled mt-1">
-        <p>O principal desafio deste projeto foi adquirir uma quantidade substancial de informações específicas necessárias para testar vários aspectos, como a exibição de cartões, conteúdos e mapas. Isso se traduziu na criação de um arquivo de inserção de dados massivo. Obter esses dados foi crucial, pois formaram a base na qual o restante do projeto se apoiava.</p>
-        <p>Como o objetivo deste projeto era criar uma espécie de plataforma social para compartilhar orientações locais dentro das cidades, foi especialmente interessante encontrar essa dificuldade logo no início. Isso nos ofereceu uma nova perspectiva, destacando o desafio de iniciar um projeto que essencialmente depende de dados do usuário quando, naquele momento, não tínhamos nenhum.</p>
+        <p>O principal desafio deste projeto foi adquirir uma quantidade substancial de informações reais necessárias tanto para a apresentção, quanto para testar vários aspectos, como a exibição de cards, conteúdos e mapas. Isso se traduziu na criação de um arquivo de inserção de dados massivo, com mais de 1000 linhas. Obter esses dados consumiu muito tempo, mas foi crucial, pois formaram a base na qual o restante do projeto se apoiava.</p>
+        <p>Como o objetivo deste projeto era criar uma espécie de plataforma social para compartilhar orientações locais dentro das cidades, foi especialmente interessante encontrar essa dificuldade logo no início. Isso nos ofereceu uma nova perspectiva, destacando o desafio de iniciar um projeto que essencialmente depende de dados de usuários, quando, naquele momento, não tínhamos nenhum.</p>
         <p>Ao longo do desenvolvimento, enfrentamos vários desafios de design e produto que exigiram constantes reformulações devido a limitações de tempo e recursos. Isso nos levou a priorizar recursos de forma eficaz e aprofundar nossa compreensão de conceitos essenciais como MVP e gerenciamento de projetos eficiente, ajudando-nos a superar esses obstáculos.</p>
-        <p>Uma estratégia crucial para gerenciar uma aplicação tão complexa foi mapear os possíveis percursos dos usuários (que você pode ver <a href="https://www.figma.com/file/oU12jQDaSnXDGROQxXxVgi/Go-local?type=design&node-id=6150%3A2249&mode=design&t=93CpMQbpIVFOoxRS-1" class="text-decoration-none blue">aqui</a>), uma lição aprendida com nosso projeto anterior, <a href="<%= relative_url '/en/projects/guide_me' %>" class="blue link text-decoration-none">guide-me</a>. Essa abordagem nos permitiu visualizar tudo o que pretendíamos e tudo o que poderíamos fazer dentro de nossas limitações, garantindo que não nos contentássemos com uma abordagem de 'bom o suficiente' e avançássemos rapidamente para o próximo recurso.</p>
+        <p>Uma estratégia crucial para gerenciar uma aplicação tão complexa foi mapear os possíveis percursos dos usuários (que você pode ver <a href="https://www.figma.com/file/oU12jQDaSnXDGROQxXxVgi/Go-local?type=design&node-id=6150%3A2249&mode=design&t=93CpMQbpIVFOoxRS-1" class="text-decoration-none blue">aqui</a>), uma lição aprendida com nosso projeto anterior, <a href="<%= relative_url '/projects/guide_me' %>" class="blue link text-decoration-none">guide-me</a>.</p>
       </div>
     </div>
   </div>

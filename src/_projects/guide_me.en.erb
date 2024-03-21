@@ -7,26 +7,19 @@ image: /images/guide_me.svg
 project_link: https://guide-me-app-c2d673a36c32.herokuapp.com/
 github_link: https://github.com/pedro-hga/guide-me
 description: "A platform that connects aspiring professionals with experienced mentors in various industries."
-programming: [[, red],[, yellow],[, orange],[, pink],[, red],[󰊤, blue],[, blue],[, purple]]
-contributions: [
-["Introdução","O objetivo deste trabalho era o desenvolvimento full-stack de uma aplicação completa, com cada integrante responsável por desenvolver desde o back-end ao front-end algumas features. Somando a isso, a maior parte da minha colaboração foi relacionada ao desenvolvimento do front-end da aplicação."],
-["Design", "Concepção e desenvolvimento da identidade visual da marca, design da interface e componentes."],
-["Colaboração","Gerenciamento das features e alocação de trabalho no grupo"]
-]
+about: "The goal of this project was the full-stack development of a complete application, with each team member responsible for developing at least one feature from the back-end to the front-end. In addition to this, the majority of my contribution was related to the front-end development of the application."
+programming: [[, red],[, red],[, yellow],[, orange],[, pink],[, purple],[󰊤, blue],[, blue],[, purple]]
 ---
 <div id="panes-project" class="panes row h-100 fs-18" data-controller="display file-name">
+  <div class="back-link ">
+    <a href="<%= relative_url '/en/projects' %>" class="blue link text-decoration-none" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+      Back to projects
+    </a>
+  </div>
   <div class="pane-left col-7 d-flex flex-column h-75">
-    <%= render 'project_page' %>
-    <div class="line-break mt-5 mr-5"></div>
+    <%= render 'project_page.en' %>
     <div class="programming-icons">
-      <h2 class="project-info-title orange mb-4">Sobre o projeto</h2>
-      <div class="light">
-        <p>Guide me é um projeto conceitual para criar uma rede de mentores e mentorados, seja para compartilhar conhecimento ou encontrar algum tipo de direção em suas carreiras.</p>
-        <p></p>
-        <p>O projeto foi criado para o curso de<a href="https://www.lewagon.com/web-development-course" target="_blank" class="text-decoration-none blue link"> Desenvolvimento Web da Le Wagon</a>.
-          Esta foi uma tarefa em grupo realizada ao longo de duas semanas .</p>
-      </div>
-      <p class="mt-5 mb-1 fs-5">Feito com:</p>
+      <p class="mt-5 mb-1 fs-5">Built with:</p>
       <div>
         <% page.data.programming.each do |info| %>
           <span class="icon <%=info[1] %>">
@@ -34,22 +27,27 @@ contributions: [
           </span>
         <% end %>
       </div>
+      <div class="line-break mt-4 mr-5"></div>
+      <h2 class="project-info-title orange mb-4">About the project</h2>
+      <div class="light">
+        <p>Guide Me is a conceptual project aimed at creating a network of mentors and mentees, whether to share knowledge or find some sort of direction in their careers.</p>
+        <p><%= page.data.about %></p>
+        <p>The project was created for the <a href="https://www.lewagon.com/web-development-course"
+        target="_blank" class="text-decoration-none
+        blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">Le Wagon's Web development course</a>.
+          This was a group endeavour that spanned for two weeks.</p>
+      </div>
     </div>
   </div>
   <div class="pane-right col-5 d-flex row h-100">
     <div class="project-info-contributions">
-      <h2 class="project-info-title fs-1 mt-5 orange mb-4">Contribuições</h2>
-      <div>
-        <% page.data.contributions.each do |info| %>
-          <span class="icon <%=info[1] %>">
-            <h3 class="fs-4 orange list-unstyled mt-4 mb-2">
-              <%= info[0] %>
-            </h3>
-            <p class="light fs-18 list-unstyled mt-1">
-              <%= info[1] %>
-            </p>
-          </span>
-        <% end %>
+      <h2 class="project-info-title fs-1 mt-5 orange mb-4">Challenges and learnings</h2>
+      <div class="light fs-18 list-unstyled mt-1">
+        <p>As our first full application using Ruby on Rails, we embarked on a journey to grasp the intricacies of the framework, from understanding its operation to effectively organizing files as the project expanded, and learning how to debug emerging errors.</p>
+        <p>Our initial challenge lay in structuring our data to facilitate CRUD operations. While this seemed straightforward at first, and we had to deal layers of complexities, particularly when implementing authentication. This experience underscored the importance of meticulousness in database management.</p>
+        <p>This project served as an invaluable introduction to developing full-stack applications. Though relatively modest in scope, it provided us with a solid grasp of RESTful design principles and proficiency in CRUD operations.</p>
+        <p>During the front-end development phase, we encountered the pitfalls of over-reliance on Bootstrap. While initially expedient, we discovered its limitations when customizing features or accommodating evolving project needs. Although Bootstrap accelerates development, its indiscriminate use can lead to complications and hinder flexibility.</p>
+        <p>These challenges afforded us valuable insights into the significance of collaboration and communication in project development. We realized the interconnectedness of various components and our reliance on each other to achieve project objectives.</p>
       </div>
     </div>
   </div>
