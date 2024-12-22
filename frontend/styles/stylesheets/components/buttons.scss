@@ -1,15 +1,27 @@
 .btn-main {
   font-family: $body-font;
-  outline: 2px solid $blue;
+  // outline: 2px solid $blue;
+  color: $bg0;
+  background-color: $blue;
+  margin-right: 16px;
+  border-radius: 6px;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  font-family: $body-font;
+  border: 2px solid $blue;
   color: $blue;
   margin-right: 16px;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 4px 8px;
   text-decoration: none;
 }
 
 .btn-main:hover {
-  // outline: 2px solid $blue-dark;
-  // color: $blue-dark;
-  transition: $blue-dark 0.3s ease;
+  color: $orange;
+  outline: 2px solid $orange;
+  border-radius: 0;
+  transition: 0.2s ease;
 }

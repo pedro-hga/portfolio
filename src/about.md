@@ -5,8 +5,8 @@ title: Sobre
 
 <h1 class="d-flex row fs-1">
   <span class="mb-3">Oi, sou <span class="orange">Pedro!</span> </span>
-  <span class="pink fs-3">Desenvolvedor web full-stack,</span>
-  <span class="pink fs-3">Arquiteto e Urbanista</span>
+  <span class="purple fs-3">Desenvolvedor web full-stack,</span>
+  <span class="purple fs-3">Arquiteto e Urbanista</span>
 </h1>
 
 
