@@ -25,6 +25,10 @@ main {
   font-family: $body-font;
 }
 
+.nerd {
+  font-family: $nerd-font;
+}
+
 .link:hover {
   color: $orange;
   transition: 0.3s ease;
