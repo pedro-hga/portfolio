@@ -24,7 +24,7 @@
       <% if local_resource.data.locale != I18n.locale %>
         <%= link_to local_resource.relative_url, class: "text-decoration-none nav-link-left fs-5" do %>
           <% if local_resource.data.locale == :en %>
-            <span class="green">pt-BR</span> <span class="light"><-</span> <span class="grey link">en</span>
+            <span class="green2">pt-BR</span> <span class="light"><-</span> <span class="grey link">en</span>
               <% elsif local_resource.data.locale == :'pt-BR' %>
                 <span class="grey link">pt-BR</span> <span class="light">-></span> <span class="green">en</span>
               <% end %>
