@@ -3,12 +3,12 @@
     <div class="terminal-path">
       <% if I18n.locale == :'pt-BR' %>
         <a href="<%= relative_url '/' %>" class="text-decoration-none blue link"
-     data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+          data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
           <span>~/home</span><span class="blue" data-find-directory-target="link"></span>
         </a>
       <% else %>
         <a href="/<%= I18n.locale %>/" class="text-decoration-none blue link"
-     data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+          data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
           <span>~/home</span><span class="blue" data-find-directory-target="link"></span>
         </a>
       <% end %>
@@ -19,33 +19,37 @@
       <span class="blinking-cursor">▋</span>
     </div>
   </div>
-  <div class="nav-link">
-    <% resource.all_locales.each do |local_resource| %>
-      <% if local_resource.data.locale != I18n.locale %>
-        <%= link_to local_resource.relative_url, class: "text-decoration-none nav-link-left fs-5" do %>
-          <% if local_resource.data.locale == :en %>
-            <span class="green2">pt-BR</span> <span class="light"><-</span> <span class="grey link">en</span>
-              <% elsif local_resource.data.locale == :'pt-BR' %>
-                <span class="grey link">pt-BR</span> <span class="light">-></span> <span class="green">en</span>
-              <% end %>
+  <div class="nav-link column">
+    <div>
+      <% resource.all_locales.each do |local_resource| %>
+        <% if local_resource.data.locale != I18n.locale %>
+          <%= link_to local_resource.relative_url, class: "text-decoration-none nav-link-left fs-6" do %>
+            <% if local_resource.data.locale == :en %>
+              <span class="green"><b>pt-BR</b><span class="nerd" style="margin-left: 12px;"></span></span> <span class="grey link"><span class="nerd" style="margin-right: 12px;"></span>en</span>
+            <% elsif local_resource.data.locale == :'pt-BR' %>
+              <span class="grey link">pt-BR<span class="nerd" style="margin-left: 12px;"></span></span> <span class="green"><span class="nerd" style="margin-right: 12px;"></span><b>en</b></span>
             <% end %>
           <% end %>
         <% end %>
-        <a href="mailto:pedro_hga@proton.me?subject=Olá!&body=Escreva%20seu%20texto%20aqui." target="_blank"
-                                           style="margin-right: 16px;"
-                                           class="fs-1 nav-icon text-decoration-none nav-link-left"
-                                           data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-          󰇮 </a>
-        <a href="https://github.com/pedro-hga" target="_blank"
-                                           style="margin-right: 16px;"
-                                           class="fs-1 nav-icon text-decoration-none nav-link-left"
-                                           data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-          
-        </a>
-        <a href="https://www.linkedin.com/in/pedrohga" target="_blank"
-                                                   class="fs-1 nav-icon text-decoration-none"
-                                                   data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
-          󰌻
-        </a>
-      </div>
-    </nav>
+      <% end %>
+    </div>
+    <div>
+      <a href="mailto:pedro_hga@proton.me?subject=Olá!&body=Escreva%20seu%20texto%20aqui." target="_blank"
+        style="margin-right: 16px;"
+        class="fs-1 nav-icon text-decoration-none nav-link-left link nerd"
+        data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+        󰇮 </a>
+      <a href="https://github.com/pedro-hga" target="_blank"
+        style="margin-right: 16px;"
+        class="fs-1 nav-icon text-decoration-none nav-link-left link nerd"
+        data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+        
+      </a>
+      <a href="https://www.linkedin.com/in/pedrohga" target="_blank"
+        class="fs-1 nav-icon text-decoration-none link nerd"
+        data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+        󰌻
+      </a>
+    </div>
+  </div>
+</nav>

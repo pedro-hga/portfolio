@@ -3,11 +3,11 @@
   margin: 8px 0;
   border-bottom: 1px $light-fade solid;
   padding: 0;
+  font-size: 1.05rem;
 }
 
 
 .terminal {
-  font-size: 18px;
   display: flex;
   flex-direction: column;
 }
@@ -28,7 +28,9 @@
 }
 
 .nav-link {
-  font-size: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .blinking-cursor {
@@ -54,20 +56,17 @@
 }
 
 @media screen and (max-width: 992px) {
-
-  .nav-link-left {
-    margin-right: 16px;
+  .nav-link {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: end;
   }
 
-  .nav-link {
-    font-size: 32px;
+  .nav-link-left {
+    margin: 0 0 2rem 0;
   }
 
   .terminal-command {
     display: none
-  }
-
-  .terminal {
-    font-size: 16px;
   }
 }

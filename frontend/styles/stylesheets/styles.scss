@@ -29,8 +29,20 @@ main {
   font-family: $nerd-font;
 }
 
+.comment {
+  color: $grey;
+  font-family: $body-font;
+  font-style: italic;
+  font-size: 1rem;
+}
+
 .link:hover {
   color: $orange;
+  transition: 0.2s ease;
+}
+
+.italic-text:hover {
+  font-style: italic;
   transition: 0.3s ease;
 }
 
