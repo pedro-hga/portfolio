@@ -1,11 +1,10 @@
 .navbar {
   height: 80px;
   margin: 8px 0;
-  border-bottom: 1px $light-fade solid;
+  border-bottom: 1px $grey solid;
   padding: 0;
   font-size: 1.05rem;
 }
-
 
 .terminal {
   display: flex;
@@ -42,26 +41,38 @@
 }
 
 @keyframes blink {
-  0% {
-    opacity: 1;
-  }
+0% {
+  opacity: 1;
+}
 
-  50% {
-    opacity: 0;
-  }
+50% {
+  opacity: 0;
+}
 
-  100% {
-    opacity: 1;
-  }
+100% {
+  opacity: 1;
+}
 }
 
 @media screen and (max-width: 992px) {
-  .nav-link {
+  .navbar {
     display: flex;
-    flex-direction: column-reverse;
-    justify-items: end;
+    flex-direction: column;
+    align-items: start;
   }
 
+  .nav-link {
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+  .lang-selector {
+    margin-right: 16px;
+  }
+
+.terminal {
+    padding-top: 8px;
+}
   .nav-link-left {
     margin: 0 0 2rem 0;
   }

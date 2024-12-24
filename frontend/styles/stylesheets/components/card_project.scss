@@ -5,13 +5,12 @@
   width: 95%;
   display: flex;
   flex-direction: row;
+  margin-bottom: 40px;
 }
 
 .card-project:hover {
-  outline: 1px solid $orange;
+  outline: 2px solid $orange;
 }
-
-
 
 .card-project-info {
   display: flex;
@@ -30,7 +29,6 @@
 .card-project-about {
   margin-right: 16px;
 }
-
 .card-project-description {
   padding-right: 16px;
   display: -webkit-box;
@@ -41,36 +39,40 @@
 }
 
 
+
 // mobile
 @media screen and (max-width: 992px) {
   .card-project {
-    outline: 1px solid $grey;
     width: 100%;
+    flex-direction: column;
     justify-content: start;
+    margin-bottom: 64px;
   }
 
   .card-project-info {
     display: flex;
-    flex-direction: column;
     align-items: start;
     justify-content: start;
   }
 
+  .card-project-title {
+  }
+
   .card-project-description {
     display: none;
+    justify-content: center;
   }
 
   .card-project-links {
-    display: flex;
-    flex-direction: column;
-    height: 45%;
-    justify-content: space-between;
+    display: none;
+    // flex-direction: column;
+    // height: 45%;
+    // justify-content: space-between;
   }
 
   .card-project-image {
-    border-radius: 8px 0 0 8px;
-    outline: 1px solid $grey;
-    width: 160px;
+    width: 100%;
+    border-radius: 8px;
     height: 198px;
     object-fit: cover;
     margin-right: 24px;

@@ -19,8 +19,8 @@
       <span class="blinking-cursor">▋</span>
     </div>
   </div>
-  <div class="nav-link column">
-    <div>
+  <div class="nav-link">
+    <div class="lang-selector">
       <% resource.all_locales.each do |local_resource| %>
         <% if local_resource.data.locale != I18n.locale %>
           <%= link_to local_resource.relative_url, class: "text-decoration-none nav-link-left fs-6" do %>

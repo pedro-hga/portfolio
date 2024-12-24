@@ -11,7 +11,7 @@ main {
 }
 
 .line-break {
-  border-bottom: 1px dashed $light-fade;
+  border-bottom: 1px dashed $grey;
   margin: 32px 16px;
 }
 
@@ -27,6 +27,10 @@ main {
 
 .nerd {
   font-family: $nerd-font;
+}
+
+.sans {
+  font-family: $post-font;
 }
 
 .comment {

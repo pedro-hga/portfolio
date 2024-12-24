@@ -1,27 +1,27 @@
 <% collections.projects.resources.each do |project| %>
   <% if project.data.language != 'en' %>
-    <div class="card-project mb-5" data-project-file="<%= project.data.file_name %>" data-action="mouseover->display#changeDisplay mouseout->display#changeDisplay mouseover->file-name#getFileName mouseout->file-name#reset">
+    <div class="card-project" data-project-file="<%= project.data.file_name %>" data-action="mouseover->display#changeDisplay mouseout->display#changeDisplay mouseover->file-name#getFileName mouseout->file-name#reset">
       <img class="card-project-image" src=<%= project.data.image %> />
       <div class="card-project-info my-3">
         <div class="card-project-title">
           <a href="<%= project.relative_url %>"
-              class="card-project-about text-decoration-none orange"
+              class="card-project-about text-decoration-none"
               data-project-file="<%= project.data.file_name %>"
               data-action= "mouseover->move-element#getHref mouseout->move-element#resetHref ">
             <h2 class="orange"><%= project.data.title %></h2>
           </a>
         </div>
-        <div class="card-project-description mb-3 readme" >
+        <div class="card-project-description mb-3 sans" >
           <p><%= project.data.description %></p>
         </div>
         <div class="card-project-links">
-          <a href="<%= project.relative_url %>" class="card-project-about text-decoration-none blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+          <a href="<%= project.relative_url %>" class="card-project-about text-decoration-none green link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
             Sobre
           </a>
-          <a href="<%= project.data.project_link %>" target="_blank" class="pt-3 card-project-about text-decoration-none blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+          <a href="<%= project.data.project_link %>" target="_blank" class="pt-3 card-project-about text-decoration-none green link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
             Ir ao projeto
           </a>
-          <a href="<%= project.data.github_link %>" target="_blank" class="pt-3 card-project-about text-decoration-none blue link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
+          <a href="<%= project.data.github_link %>" target="_blank" class="pt-3 card-project-about text-decoration-none green link" data-action="mouseover->move-element#getHref mouseout->move-element#resetHref">
             <i class="fab fa-github"></i> Código
           </a>
         </div>
